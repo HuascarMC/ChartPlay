@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var chtChart: LineChartView!
     @IBOutlet weak var txtTextBox: UISearchBar!
     
+    var numbers = [Double]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,6 +26,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnButton(_ sender: Any) {
+        let txt = txtTextBox.text
+        let value = (txt! as NSString).doubleValue
+        self.numbers.append(value)
     }
     
 }
