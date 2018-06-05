@@ -6,6 +6,7 @@ target 'LineChartExample' do
   use_frameworks!
 
   # Pods for LineChartExample
+  pod 'Charts'
 
   target 'LineChartExampleTests' do
     inherit! :search_paths
